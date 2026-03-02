@@ -26,6 +26,6 @@ jobs:
         - name: Install dependencies
           run: npm install
         - name: Publish Packages
+          run: npm publish
           env:
             NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          run: npm publish
